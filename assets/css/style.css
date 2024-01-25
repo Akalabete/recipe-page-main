@@ -1,0 +1,215 @@
+
+:root {
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 32%);
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('/assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'Young Serif';
+    src: url('/assets/fonts/young-serif/YoungSerif-Regular.ttf');
+}
+
+.young-serif {
+    font-family: 'Young Serif';
+}
+.outfit {
+    font-family: 'Outfit'
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit';
+    background-color: var(--eggshell);
+}
+body, header {
+    margin: 0;
+    color: var(--dark-charcoal)
+}
+
+.sitewrapper {
+    
+    background-color: white;
+    min-width: 375px;
+}
+@media screen and (min-width : 415px){
+    
+    .sitewrapper {
+        margin: 0 auto;
+        padding: 20px;
+        width: 60%;
+        border-radius: 10px; 
+    }
+    header img {
+        border-radius: 10px;
+    }
+}
+
+@media screen and (min-width : 750px){
+    .sitewrapper {
+        margin: 5em auto;
+        padding: 20px;
+    }
+    #presentation h1 {
+        font-size: 3vh;
+    }
+}
+@media screen and (min-width: 375px) {
+    body {
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 1024px) {
+    #presentation h1 {
+        font-size: 5vh;
+    }
+}
+.headerimg {
+    width: 100%;
+    height: auto; 
+}
+.headerimg img {
+    object-fit: contain;
+    width: 100%;
+}
+
+.width-inner {
+    width: 90%;
+    margin: auto;
+}
+.padding-preptime{
+    padding: 5%;
+}
+.bckgrd-pink {
+    background-color : var(--rose-white);
+}
+
+.rasp {
+    color: var(--dark-raspberry);
+}
+.dc {
+    color: var(--dark-charcoal);
+}
+
+#nutrition {
+    padding-bottom: 20px;
+}
+
+.nutmeg {
+    color: var(--nutmeg);
+}
+.nut-item {
+    display: flex;
+    flex-direction: row;
+}
+.nut-item p {
+    width: 50%;
+}
+.sep {
+    border-bottom: solid 2px var(--light-grey);
+   
+}
+
+.padding-left-7 {
+    padding-left: 7%;
+}
+.padding-left-10 {
+    padding-left: 10%;
+}
+
+#menu li div.box,
+#preptimelist li div.box,
+#instructionslist li div.box  {
+    display:inline-block;
+    vertical-align:middle;
+}
+#menu li div.box {
+    padding-left: 0.5em;
+}
+#preptimelist li div.box {
+    padding-left: 1.3em;
+    
+}
+#instructionslist li div.box{
+    padding-left: 1.0em;
+    width: 100%;
+    
+}
+
+ul {
+    list-style: none;
+}
+
+#ingredients ul li::before, #preptime ul li::before {
+    content: "•";
+    display: inline-block;
+    vertical-align: middle;
+    width: 1em;
+    margin-left: -2.0em; 
+}
+#ingredients ul li::before{
+    color: var(--nutmeg);
+}
+#preptime ul li::before {
+    color: var(--dark-raspberry);
+}
+ol {
+    list-style:none;
+}
+ol li {
+    counter-increment: li;
+}
+
+ol li::before {
+    content: "."counter(li);
+    color: var(--nutmeg);
+    font-weight: bolder;
+    display: inline-block;
+    width: 0.9em;
+    margin-left: -2.3em;
+    vertical-align: top;
+    text-align: right;
+    direction: rtl;
+}
+
+h1 { 
+    font-size: 2em;
+    line-height: 1em;
+    font-weight: 500;
+    margin-bottom: 0.8em;
+}
+
+li {
+    font-size: 1em;
+    line-height: 1.3em;
+    margin: 0.7em auto;;
+}
+.box{ 
+    line-height: 1.3em;
+}
+
+.lspasm {
+    letter-spacing: 0.02em;
+}
+
+.lspamd {
+    letter-spacing: 0.04em;
+}
+
+.fssm {
+    font-size: 0.9em;
+}
+
+.fsmd{
+    font-size: 1em;
+}
